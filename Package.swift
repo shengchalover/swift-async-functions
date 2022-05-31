@@ -9,22 +9,22 @@
 import PackageDescription
 
 let package = Package(
-    name: "CollectionConcurrencyKit",
+    name: "swift-async-functions",
     platforms: [.iOS(.v13), .macOS(.v10_15), .watchOS(.v6), .tvOS(.v13)],
     products: [
         .library(
-            name: "CollectionConcurrencyKit",
-            targets: ["CollectionConcurrencyKit"]
+            name: "AsyncFunctions",
+            targets: ["AsyncFunctions"]
         )
     ],
     targets: [
         .target(
-            name: "CollectionConcurrencyKit",
+            name: "AsyncFunctions",
             path: "Sources"
         ),
         .testTarget(
-            name: "CollectionConcurrencyKitTests",
-            dependencies: ["CollectionConcurrencyKit"],
+            name: "AsyncFunctionsTests",
+            dependencies: ["AsyncFunctions"],
             path: "Tests"
         )
     ]
